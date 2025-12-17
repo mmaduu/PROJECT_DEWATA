@@ -1,0 +1,98 @@
+/* Feedback Info Section - Right Side Content */
+.feedback-info {
+    padding: 20px;
+}
+
+.feedback-info h5 {
+    color: var(--dewata-blue);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feedback-info > p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Info Box Container */
+.info-box-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Individual Info Item */
+.info-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    background: #ccff00;
+    color: var(--dewata-blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.info-item h6 {
+    color: var(--dewata-blue);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Contact CTA */
+.contact-cta {
+    background: rgba(1, 58, 199, 0.06);
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 25px;
+}
+
+.contact-cta p {
+    color: #333;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.contact-cta strong {
+    color: var(--dewata-blue);
+    font-size: 14px;
+}
+
+.contact-cta a {
+    color: var(--dewata-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-cta a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .feedback-info {
+        margin-top: 20px;
+    }
+}

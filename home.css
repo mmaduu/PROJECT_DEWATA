@@ -1,0 +1,372 @@
+:root {
+  --dewata-blue: #013ac7;
+  --dewata-light: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dewata-blue);
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 15px 100px;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: auto;
+}
+
+.collapse {
+  font-size: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dewata-light);
+  padding: 0.5rem 1rem;
+  font-weight: lighter;
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--dewata-light);
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "MD";
+  src: url("font/MillionDesign.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Momentz";
+  src: url("font/Momentz.ttf") format("truetype");
+}
+
+/* TAGLINE */
+.tagline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.text {
+  font-family: "MD", sans-serif;
+  font-size: 90px;
+  color: white;
+  line-height: 0.7;
+  position: relative;
+  z-index: 3;
+}
+
+.symbol {
+  font-family: "Momentz", sans-serif;
+  font-size: 250px;
+  font-weight: reguler;
+  line-height: 0.1;
+  color: #ccff00;
+}
+
+.hash {
+  transform: translateY(140px) translateX(-690px);
+  filter: blur(5px);
+}
+
+.and {
+  transform: translateY(-70px) translateX(700px);
+  filter: blur(5px);
+}
+
+/* WHITE SECTION */
+.white-section {
+  background: white;
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+  padding: 0;
+}
+
+/* Main Title Section */
+.home-title {
+  font-family: "MD", sans-serif;
+  font-size: 48px;
+  color: var(--dewata-blue);
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  height: 100%;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(1, 58, 199, 0.15);
+}
+
+.feature-card.featured {
+  background: linear-gradient(135deg, #013ac7 0%, #0151f5 100%);
+  color: white;
+  border: none;
+  max-height: 410px;
+  padding: 40px 30px;
+}
+
+.feature-card.featured .feature-title,
+.feature-card.featured .feature-description {
+  color: white;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(1, 58, 199, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feature-card.featured .feature-icon {
+  background: rgba(255, 255, 255, 0.2);
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.feature-icon i {
+  font-size: 28px;
+  color: var(--dewata-blue);
+}
+
+.feature-card.featured .feature-icon i {
+  color: white;
+  font-size: 32px;
+}
+
+.feature-title {
+  font-family: "MD", sans-serif;
+  font-size: 22px;
+  color: var(--dewata-blue);
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.feature-card.featured .feature-title {
+  margin-bottom: 12px;
+}
+
+.feature-subtitle {
+  font-family: "MD", sans-serif;
+  font-size: 22px;
+  color: var(--dewata-blue);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.feature-card.featured .feature-description {
+  margin-bottom: 15px;
+}
+
+/* Feature Stats */
+.feature-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  justify-content: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-family: "MD", sans-serif;
+  font-size: 28px;
+  color: white;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Services Overview */
+.services-overview {
+  margin-top: 40px;
+  padding: 40px 30px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.section-title {
+  font-family: "MD", sans-serif;
+  font-size: 28px;
+  color: var(--dewata-blue);
+}
+
+.service-badge {
+  background: white;
+  border-radius: 15px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.service-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(1, 58, 199, 0.15);
+  border-color: var(--dewata-blue);
+}
+
+.service-badge i {
+  font-size: 28px;
+  color: var(--dewata-blue);
+}
+
+.service-badge span {
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+}
+
+/* RESPONSIVE OPTIMIZATION */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .text {
+    font-size: 65px;
+  }
+
+  .symbol {
+    font-size: 180px;
+  }
+
+  .white-section {
+    margin-top: 80px;
+  }
+
+  .home-title {
+    font-size: 36px;
+  }
+
+  .feature-card {
+    padding: 25px 20px;
+  }
+
+  .hash {
+    left: 10%;
+    top: -20px;
+  }
+
+  .and {
+    right: 10%;
+    top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 50px;
+  }
+
+  .symbol {
+    font-size: 150px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feature-icon i {
+    font-size: 26px;
+  }
+
+  .service-badge {
+    padding: 15px 10px;
+  }
+
+  .service-badge i {
+    font-size: 24px;
+  }
+
+  .service-badge span {
+    font-size: 12px;
+  }
+}

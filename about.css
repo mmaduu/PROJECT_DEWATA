@@ -1,0 +1,542 @@
+/* ------------------------------------------
+   ROOT & GLOBAL SETTINGS
+------------------------------------------- */
+:root {
+    --dewata-blue: #013ac7;
+    --dewata-light: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--dewata-blue);
+}
+
+
+/* ------------------------------------------
+   NAVBAR
+------------------------------------------- */
+.navbar {
+    padding: 15px 100px;
+}
+
+.navbar-logo {
+    width: 100px;
+    height: auto;
+}
+
+.collapse {
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--dewata-light);
+    padding: 0.5rem 1rem;
+    font-weight: lighter;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--dewata-light);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ------------------------------------------
+   CUSTOM FONTS
+------------------------------------------- */
+@font-face {
+    font-family: "MD";
+    src: url("font/MillionDesign.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Momentz";
+    src: url("font/Momentz.ttf") format("truetype");
+}
+
+
+/* ------------------------------------------
+   TAGLINE
+------------------------------------------- */
+.tagline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.text {
+    font-family: "MD";
+    font-size: 90px;
+    color: white;
+    line-height: 0.7;
+    position: relative;
+    z-index: 3;
+}
+
+.symbol {
+    font-family: "Momentz";
+    font-size: 250px;
+    color: #ccff00;
+    line-height: 0.1;
+}
+
+.hash {
+    transform: translateY(40px) translateX(-690px);
+    filter: blur(5px);
+}
+
+.and {
+    transform: translateY(110px) translateX(700px);
+    filter: blur(5px);
+}
+
+
+/* ------------------------------------------
+   WHITE SECTION
+------------------------------------------- */
+.white-section {
+    background: white;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-box {
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.title-small {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 14px;
+    background: rgba(1, 58, 199, 0.06);
+    color: var(--dewata-blue);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.title-main,
+.title-main1 {
+    color: var(--dewata-blue);
+    font-family: "MD";
+    margin-bottom: 20px;
+}
+
+.title-main {
+    margin-top: 10px;
+}
+
+.title-main1 {
+    margin-top: 100px;
+}
+
+.text-end {
+    padding: 5px;
+    margin-top: 100px;
+}
+
+
+/* ------------------------------------------
+   CARDS (BLUE, PROFILE, STATS)
+------------------------------------------- */
+.card-blue,
+.card-blue-light {
+    background: #013AC7;
+    border-radius: 16px;
+    padding: 18px;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    display: block;
+    /* <— penting! kembalikan ke normal */
+    height: auto;
+    /* mengikuti tinggi konten */
+}
+
+
+.card-blue-light {
+    background: #0143DF;
+    border-radius: 20px;
+    padding: 18px;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    display: block;
+    /* <— penting! kembalikan ke normal */
+    height: auto;
+    /* mengikuti tinggi konten */
+}
+
+.card-blue p,
+.card-blue-light p {
+    margin: 0 0 8px 0;
+}
+
+/* Untuk list */
+.card-blue-light ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.card-blue-light li {
+    margin-bottom: 6px;
+}
+
+.card-cream {
+    background: #ECECEC;
+    padding: 100px 70px 0 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+img.card-img {
+    border-radius: 10px;
+    height: 355px;
+    width: 100%;
+    object-fit: cover;
+}
+
+img.card-img2 {
+    max-width: 90%;
+    height: auto;
+    margin: -80px auto 0 auto;
+}
+
+/* Profile Card Fix */
+.row.align-items-stretch>[class*='col-'] {
+    display: flex;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.empty-card1,
+.empty-card2 {
+    width: 500px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.empty-card1 {
+    transform: translateX(-250px);
+}
+
+.empty-card2 {
+    transform: translateX(35px);
+}
+
+.judul,
+.nama {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nama {
+    margin-bottom: 5px;
+}
+
+.isi-nama {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+ul,
+p {
+    font-size: 13px;
+    color: var(--dewata-light);
+    opacity: 0.85;
+    margin-bottom: 15p
+}
+
+/* STATS */
+.stats-box {
+    background: var(--dewata-blue);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 145px;
+}
+
+/* Angka */
+.stats-number {
+    font-size: 55px;
+    color: var(--dewata-light);
+    line-height: 1;
+    margin-bottom: 3px;
+    font-family: "MD";
+}
+
+/* Teks */
+.stats-text {
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+}
+
+
+/* ------------------------------------------
+   CAROUSEL
+------------------------------------------- */
+.carousel-img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(80%);
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    bottom: 10px;
+    right: 50px;
+    text-align: end;
+}
+
+.carousel-caption h5 {
+    font-family: "MD";
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    font-size: 13px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background: #fff;
+    opacity: 0.6;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+.why-section {
+    margin-top: 40px;
+}
+
+/* Box container */
+.why-box {
+    background: var(--dewata-blue);
+    /* ungu seperti gambar */
+    border-radius: 18px;
+    padding: 40px 35px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Big neon number */
+.why-number {
+    position: absolute;
+    right: 20px;
+    bottom: -42px;
+    font-size: 210px;
+    font-weight: 600;
+    line-height: 1;
+    color: #ccff00;
+    /* neon */
+    opacity: 0.9;
+    font-family: "Poppins", sans-serif;
+    pointer-events: none;
+}
+
+/* Description text */
+.why-desc {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+    .why-box {
+        height: 160px;
+        padding: 30px;
+    }
+
+    .why-number {
+        font-size: 120px;
+        top: -30px;
+    }
+}
+
+/* ------------------------------------------
+   FOOTER
+------------------------------------------- */
+.minimal-footer {
+    background: var(--dewata-blue);
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.footer-left span {
+    font-weight: 600;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.footer-right a {
+    color: #ffffff;
+    margin-left: 18px;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-right a:hover {
+    opacity: 1;
+}
+
+.footer-location {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin: 10px 0 15px;
+}
+
+
+/* ------------------------------------------
+   NEON CARDS
+------------------------------------------- */
+.neon-wrapper {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.neon-card {
+    background: #ccff00;
+    color: var(--dewata-blue);
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+/* ------------------------------------------
+   RESPONSIVE
+------------------------------------------- */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .text {
+        font-size: 65px;
+    }
+
+    .symbol {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .minimal-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-right a {
+        margin: 0 10px;
+    }
+
+    .carousel-img {
+        height: 350px;
+    }
+
+    .carousel-caption {
+        bottom: 40px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .neon-wrapper {
+        gap: 12px;
+    }
+
+    .neon-card {
+        padding: 50px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 50px;
+    }
+
+    .symbol {
+        font-size: 150px;
+    }
+}
+
+/* ======================================================
+   CARD STYLES – NO HOVER ANIMATIONS
+====================================================== */
